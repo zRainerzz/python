@@ -6,7 +6,7 @@ while True:
 
     #except something goes wrong
     except ValueError:
-        print('error, re-type your x.it should be an integer. ')
+        print("error, re-type your x.it should be an integer. i'm  asking you again, ")
     #if nothing goes wrong, else:
     else:
         break
