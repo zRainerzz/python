@@ -13,5 +13,6 @@ def print_square(size):
     print(f"the total you made is {size}")
     return size
     
-
+def print_row(width):
+    print("?"*width)
 main()
