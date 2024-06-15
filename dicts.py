@@ -5,6 +5,4 @@ students=[
     {"name":"odiciz","house":"helland","patronus":None}
 ]
 for student in students:
-    print (student,students[student] sep=", ")
-    print(students[student])
-    print (student)
+    print (student["name"], student["house"] , sep=", " ,end=" / ")
