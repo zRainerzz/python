@@ -9,4 +9,5 @@ while True:
         print('error, re-type your x.it should be an integer. ')
     #if nothing goes wrong, else:
     else:
-        print(f"this is {x}")
+        break
+print(f"x is {x}")
