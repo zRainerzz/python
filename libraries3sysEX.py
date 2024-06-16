@@ -4,8 +4,8 @@ import sys
 if len(sys.argv)<3:
     #sys.exit with the system's help, it's gonna exit my program then and there on line 6
     sys.exit("too few arguments")
-for arg in sys.argv:
-    print("hello there, my name is", arg)
+for x in sys.argv:
+    print("hello there, my name is", x)
 
 
 #OUTPUT:
