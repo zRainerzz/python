@@ -15,5 +15,5 @@ elif len(sys.argv)>3:
 print("hello, my name is", sys.argv[2])
 
 
-#incase you want to show your full name, just type in the terminal: python libraries3sys.py "david smith"
-# that way, it will appear, fully. 
+#incase you want to print the full output , just type in the terminal: python libraries3sys.py david "david smith qdsqfs".
+# that way, it will appear, fully.
