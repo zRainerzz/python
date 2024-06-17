@@ -11,4 +11,4 @@ print(request.json())
 
 #we have a double quotes/single quote to represent the keys in the dictionary and after a colong it represents the value of that key 'resultCount': 1
 
-#same goes for results, but in results; the value is very long.
+#same goes for results, but in results; the value is the entire list of data, very long.
