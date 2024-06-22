@@ -5,4 +5,4 @@ Hey this is a practice repository for "new-pythoners!" i just pasted all the hig
 So bear in mind and change your mindset, you lean to make impact, to the whole world we are volenteers for the good deeds and we have to do so. Nothing is impossible, the peak has a room for everyone, thank you for reading. 
 
 ## rain()
-being a little sarcastic, just make my code looks more "Pythonic" and gives a soul to my simple repository.
+being a little sarcastic, just make my repository looks more "Pythonic" and gives a soul to my simple commitment.
