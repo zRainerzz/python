@@ -18,11 +18,7 @@ elif x=="print":
     with open ("info.csv") as file:
         for line in file:
             name,prename,city,hood=line.rstrip().split(",")
-            information={}
-            information["name"]=name
-            information["prename"]=prename
-            information["city"]=city
-            information["hood"]=hood
+            information={"name":name,"prename":prename,"city":city,"hood":hood}
             informations.append(information)
             print(f"{information['name']} {information['prename']} lives in {information['hood']},{information['city']}.")
   
