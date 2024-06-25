@@ -2,8 +2,8 @@ import sys
 informations=[]
 x=input("Type input to write and print to show the list: ")
 if x=="input":
-    name=input("person's name is: ").title()
-    prename=input(f"{name}'s given name is:  ").title()
+    prename=input("given name of then new person is:  ").title()
+    name=input(f"{prename}'s last name is: ").title()
     city=input(f"{name} {prename} lives in: ").title()
     hood=input(f"{name} {prename} lives in {city}, and the hood is: ").title()
 
@@ -17,8 +17,8 @@ elif x=="print":
 
     with open ("info.csv") as file:
         for line in file:
-            name,prename,city,hood=line.rstrip().split(",")
-            information={"name":name,"prename":prename,"city":city,"hood":hood}
+            prename,name,city,hood=line.rstrip().split(",")
+            information={"prename":prename,"name":name,"city":city,"hood":hood}
             informations.append(information)
             print(f"{information['name']} {information['prename']} lives in {information['hood']},{information['city']}.")
   
