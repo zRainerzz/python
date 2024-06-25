@@ -24,7 +24,7 @@ elif x=="print":
             information["city"]=city
             information["hood"]=hood
             informations.append(information)
-            print(f"{name} {prename} lives in {hood},{city}.")
+            print(f"{information['name']} {information['prename']} lives in {information['hood']},{information['city']}.")
   
   
 #if you haven't noticed yet, i just made a new .csv file which is used to store multiple pieces of information in the same file, it is very commonly used when you #use something like microsoft excel, apple numbers or google spreedsheets and you want to export the data to share with someone else as a csv file or conversly if you #want to import a csv file into your preferred spreedsheet software like excel or numbers or google spreedsheets you can do that as well so csv is a vey simple #text format that just seperates values with commas and different types of values ultimately with new lines as well.
