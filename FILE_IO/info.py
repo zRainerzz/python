@@ -13,8 +13,7 @@ if x=="input":
     #w refers to write/overwrite in the file.
     #a refers to append/add to the file.
     #r refers to read-only the file.
-        writer=csv.writer(file)
-        writer.writerow([prename,name,town,city,hood])
+        file.write(f"{name},{prename},{town},{city},{hood} \n")
 elif x=="print":
     with open ("info.csv") as file:
         #reader's purpose in life is to read csv files for me and figure out where are commas or quotes, where are the potential corner cases and just deal with them for me...
