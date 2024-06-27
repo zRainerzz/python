@@ -6,7 +6,7 @@ if x=="input":
     prename=input("given name of the new person is:  ").title()
     name=input(f"{prename}'s last name is: ").title()
     town=input(f"{prename} {name} is from: ")
-    city=input(f"{name} {prename} lives in {town}, city name is: ").title()
+    city=input(f"{name} {prename} is from {town} and the city's name is: ").title()
     hood=input(f"{name} {prename} lives in {city}, and the hood is: ").title()
     with open("info.csv", "a") as file:
     #the file will automatically closed as soon as the calling command close.
