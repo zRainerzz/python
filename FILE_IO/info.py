@@ -1,4 +1,5 @@
 import sys
+import csv
 informations=[]
 x=input("Type input to write and print to show the list: ")
 if x=="input":
@@ -17,6 +18,8 @@ if x=="input":
 elif x=="print":
 
     with open ("info.csv") as file:
+        #reader's purpose in life is to read csv files for me and figure out where are commas or quotes, where are the potential corner cases and just deal with them for me...
+        #we can use it instead, but i don't have to at the moment. here's the input as example reader=
         for line in file:
             prename,name,town,city,hood=line.rstrip().split(",")
             information={"prename":prename,"name":name,"town":town,"city":city,"hood":hood}
