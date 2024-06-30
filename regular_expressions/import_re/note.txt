@@ -1,0 +1,28 @@
+.           any character except a newline
+
+*           0 or more repitions
+
++           1 or more repitions
+
+?           0 or 1 repitions
+
+{m}         m repitions
+
+{m,n}       m-n repitions
+
+^           matches the start of the string
+
+$           matches the end of the string or just before the newline at the end of the string
+
+[]          set of characters
+
+[^]         complementing the set
+
+
+
+.+ is equivilant to ..*
+
+
+the backslash in there means i have stopped using the "." command but instead i'll use it as a normal dot, nothing more, nothing less. so now will it will make sure that the right part of the email has .com
+
+adding the r before the quotes means i'm telling python to treat it as raw strings, it indicates to python that it should not to interpret any backslashes in the usual way, I WANT TO LITERALLY PASS THE BACKSLASH AND THE DOT AND THE COM INTO THIS PARTICULAR FUNCTION SEARCH IN THIS CASE.
