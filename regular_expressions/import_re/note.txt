@@ -18,10 +18,18 @@ $           matches the end of the string or just before the newline at the end 
 
 [^]         complementing the set
 
+\d          decimal digit 
 
+\D          Not a decimal digit
 
+\s          whitespace characters
+
+\S          Not whitespace characters
+
+\w          word characters underscore and numbers as well
+
+\W          Not word characters
 .+ is equivilant to ..*
-
 
 the backslash in there means i have stopped using the "." command but instead i'll use it as a normal dot, nothing more, nothing less. so now will it will make sure that the right part of the email has .com
 
