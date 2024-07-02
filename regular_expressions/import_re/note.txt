@@ -29,6 +29,12 @@ $           matches the end of the string or just before the newline at the end 
 \w          word characters underscore and numbers as well
 
 \W          Not word characters
+
+A|B         either A or B
+
+(...)       a group
+
+(?:...)     non-capturing version
 .+ is equivilant to ..*
 
 the backslash in there means i have stopped using the "." command but instead i'll use it as a normal dot, nothing more, nothing less. so now will it will make sure that the right part of the email has .com
