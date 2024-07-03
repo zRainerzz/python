@@ -1,40 +1,49 @@
-.           any character except a newline
+.                   any character except a newline
 
-*           0 or more repitions
+*                   0 or more repitions
 
-+           1 or more repitions
++                   1 or more repitions
 
-?           0 or 1 repitions
+?                   0 or 1 repitions
 
-{m}         m repitions
+{m}                 m repitions
 
-{m,n}       m-n repitions
+{m,n}               m-n repitions
 
-^           matches the start of the string
+^                   matches the start of the string
 
-$           matches the end of the string or just before the newline at the end of the string
+$                   matches the end of the string or just before the newline at the end of the string
 
-[]          set of characters
+[]                  set of characters
 
-[^]         complementing the set
+[^]                 complementing the set
 
-\d          decimal digit 
+\d                  decimal digit 
 
-\D          Not a decimal digit
+\D                  Not a decimal digit
 
-\s          whitespace characters
+\s                  whitespace characters
 
-\S          Not whitespace characters
+\S                  Not whitespace characters
 
-\w          word characters underscore and numbers as well
+\w                  word characters underscore and numbers as well
 
-\W          Not word characters
+\W                  Not word characters
 
-A|B         either A or B
+A|B                 either A or B
 
-(...)       a group
+(...)               a group
 
-(?:...)     non-capturing version
+(?:...)             non-capturing version
+
+re.IGNORECASE       as a flag, it means you can ignore the case, lower upper or a combination of both.
+
+re.MULTILINE        ^: The caret (^) additionally matches at the beginning of each line (immediately after each newline character).
+$: The dollar sign ($) additionally matches before each newline character, allowing you to target the end of each line.
+
+re.DOTALL           The dot (.) will match any character, including newline characters.
+A pattern like This.is.a.text can now match the text even if it spans multiple lines (e.g., "This\nis\na text").
+
 .+ is equivilant to ..*
 
 the backslash in there means i have stopped using the "." command but instead i'll use it as a normal dot, nothing more, nothing less. so now will it will make sure that the right part of the email has .com
