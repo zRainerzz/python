@@ -1,36 +1,13 @@
 import re
 
-def is_valid_email(email):
-    """
-    Checks if an email address is potentially valid using a basic regex and
-    optionally a verification service (recommended).
 
-    Args:
-        email (str): The email address to validate.
-
-    Returns:
-        bool: True if the email seems valid (basic check), False otherwise.
-    """
-
-    # Basic check (optional, can be removed)
-    if re.search(r"^\w+@(\w+\.)?\w+\.(net|com|org)$", email.lower()):
-        # Optional: Further validation using email verification service here
-        return True  # Replace with your verification service call
-    else:
-        return False
-
-def main():
-    """
-    Prompts the user for an email address and displays the validation result.
-    """
-
-    email = input("Enter an email address: ")
-
-    if is_valid_email(email):
-        print(f"{email} seems to be a valid email address (basic check).")
-        print("For more reliable validation, consider using an email verification service.")
-    else:
-        print(f"{email} does not seem to be a valid email address (basic check).")
-
-if __name__ == "__main__":
-    main()
+#re.search(pattern, string, flags=0)
+#for more info jump to note.txt
+email=input("Whats ur email? ").strip()
+if re.search(r"^\w+@(\w+\.)?\w+\.(net|com|org)$", email.lower()):
+#[^@] means take everything but another @ 
+#[abcdefghijklmnopqrstuvwxyz1234567890_] now i'm using everything between the brackets numbers and alphabets or just type [a-zA-Z0-9_] or \w to represent that you want a "word characters."
+#^ means start matching at the beginning of the string,   \w means word characters only,   + means one or more,   @ at symbol literally,   [^@] everything but @,   + means 1 or more,   \.com a dot com literally,   $ match at the end   
+    print("Valid")
+else:
+    email=input("Invalid email. Would you enter a valid email, please? ").strip()
