@@ -1,8 +1,8 @@
 import re
 url=input("URL: ").strip()
-matches=re.search(r"^https?://(?:www\.)?twitter\.com/(.+)$", url, re.IGNORECASE)
+matches=re.search(r"^https?://(?:www\.)?twitter\.(?:com|org)/([a-zA-Z0-9_]+)$", url, re.IGNORECASE)
 if matches:
-    print(f"Username: ", matches.group(1))
+    print("Username: ", matches.group(1))
 #username=re.sub(r"^(https?://)?(www\.|)twitter\.com","",url    )
 #username=url.removeprefix("https://twitter.com/","")
 #prefix is a string that comes at the start of another, so if i remove prefix i wont need another argument for this function.
