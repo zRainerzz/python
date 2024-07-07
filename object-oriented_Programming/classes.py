@@ -10,8 +10,8 @@ def main():
 
 def get_student():
     student=Student()
-    student.name=input("Name: ").capitalize()
-    student.house=input("House: ").capitalize()
+    name=input("Name: ").capitalize()
+    house=input("House: ").capitalize()
     return student
 
 if __name__ == "__main__":
