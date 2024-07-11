@@ -3,7 +3,11 @@
 #in short, classes allow you to invent your own data types in Python and give them a name and this is a primary feature of object oriented programming to be able to create your own objects this way and in case of python in classes. even give them some custom names.
 class Student:
     def __init__ (self, name, house):
+        if not name:
+            raise ValueError("Missing name.")
         #init is used to initialize the contents of an object
+        if house not in ["Gryffindor","Hufflepuff","Ravenclaw","Slytherin"]:
+            raise ValueError("Invalid house.")
         self.name=name
         self.house=house
 def main():
