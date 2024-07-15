@@ -5,6 +5,7 @@ Hey this is a practice repository for "new-pythoners!" i just pasted all the hig
 So bear in mind we all do coding from the present bringing the past myths and methods to improve our future, so changing our mindset is a must, you lean to make impact and influence the whole world, we are volenteers for the good deeds and we have to do so. Nothing is impossible, the peak has a room for everyone, we can chase it together, 1 hand can't clap, so think about everyone else as the other hand. Thank you for reading. 
 
 Going through a full university coding package.
+remember this is " Harvard cs50's introduction to python", this course files are no joke. 
 
 ## rain()
 being a little sarcastic, just make my repository looks more "Pythonic" and gives a soul to my simple commitment.
