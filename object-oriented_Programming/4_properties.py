@@ -8,8 +8,6 @@ class Student:
         if not last:
             raise ValueError("Invalid Name, No last name? ")
         #init is used to initialize the contents of an object
-        if house not in ["Gryffindor","Hufflepuff","Ravenclaw","Slytherin"]:
-            raise ValueError("Invalid house.")
         self.first=first
         self.middle=middle
         self.last=last
@@ -18,8 +16,22 @@ class Student:
         return f"{self.last} {self.first} {self.middle} from {self.house}"
     #use it to print the message, instead of printing it from the main function. it will have the priority
     #__init__ and __str__ are special methods (functions in classes are called methods) and now we are creating our own method.
+    
+    
+    @property
+    #Getter
+    def house(self):
+        return self._house
+    
+    @house.setter
+    #Setter
+    def house(self, house):
+        if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house. line 34 is the problem.")
+        self._house=house
 def main():
     student=get_student()
+    student.house="Number Four, Privet Drive"
     print(student)
 
 
