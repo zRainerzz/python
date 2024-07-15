@@ -36,6 +36,7 @@ class Student:
         self._house=house
 def main():
     student=get_student()
+    student._house="NO HOUSES AVAILABLE ATM."
     print(student)
 
 
@@ -43,7 +44,7 @@ def get_student():
     first=input("First Name: ").capitalize()
     middle=input("Middle Name (optional): ").capitalize()
     last=input("Last Name: ").capitalize()
-    house=input("House: ").capitalize()
+    house=input("House(no house will show up cuz i used _house which will force you to have that output even tho you typed your input) line 39 can be deleted to show your house!: ").capitalize()
     return Student(first, middle, last, house)
 
 if __name__ == "__main__":
