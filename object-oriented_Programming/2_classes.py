@@ -15,8 +15,6 @@ class Student:
         self.last=last
         self.house=house
         self.patronus=patronus
-        #def __str__(self):
-        #use it to print the message, instead of printing it from the main function. it will have the priority
     def charm(self):
         #__init__ and __str__ are special methods (functions in classes are called methods) and now we are creating our own method.
         match self.patronus:
