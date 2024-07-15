@@ -14,15 +14,13 @@ class Student:
         self.middle=middle
         self.last=last
         self.house=house
-        #def __str__(self):
+        def __str__(self):
+            return f"{self.last} {self.first} {self.middle} from {self.house}"
         #use it to print the message, instead of printing it from the main function. it will have the priority
         #__init__ and __str__ are special methods (functions in classes are called methods) and now we are creating our own method.
 def main():
     student=get_student()
-    if not student.middle:
-        print(f"{student.first} {student.last} from {student.house}")
-    else:
-        print(f"{student.first} {student.middle} {student.last} from {student.house}")
+    print(student)
 
 
 def get_student():
