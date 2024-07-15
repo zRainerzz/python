@@ -3,8 +3,6 @@
 #in short, classes allow you to invent your own data types in Python and give them a name and this is a primary feature of object oriented programming to be able to create your own objects this way and in case of python in classes. even give them some custom names.
 class Student:
     def __init__ (self,first,middle, last , house,):
-        if not first:
-            raise ValueError("Invalid name, No first name? ")
         if not last:
             raise ValueError("Invalid Name, No last name? ")
         #init is used to initialize the contents of an object
@@ -16,7 +14,14 @@ class Student:
         return f"{self.last} {self.first} {self.middle} from {self.house}"
     #use it to print the message, instead of printing it from the main function. it will have the priority
     #__init__ and __str__ are special methods (functions in classes are called methods) and now we are creating our own method.
-    
+    @property
+    def first(self):
+        return self._first
+    @first.setter
+    def first (self,first):
+        if not first:
+            raise ValueError("Missing first name!")
+        self._first=first
     
     @property
     #Getter
@@ -27,11 +32,10 @@ class Student:
     #Setter
     def house(self, house):
         if house not in ["Gryffindor","Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid house. line 34 is the problem.")
+            raise ValueError("Invalid house. ")
         self._house=house
 def main():
     student=get_student()
-    student.house="Number Four, Privet Drive"
     print(student)
 
 
