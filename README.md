@@ -8,4 +8,4 @@ Going through a full university coding package.
 remember that this is " Harvard cs50's introduction to python", that's what i have learnt from the course so this repository is no joke. 
 
 ## rain()
-being a little sarcastic, just make my repository looks more "Pythonic" and gives a soul to my simple commitment.
+being a little sarcastic, just make my repository looks more "Pythonic" and gives a soul to my simple commitments.
