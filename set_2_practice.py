@@ -1,7 +1,7 @@
 balance=0
 
 def main():
-    print("Balance",balance)
+    print("Balance:",balance)
 
 if __name__ =="__main__":
     main()
