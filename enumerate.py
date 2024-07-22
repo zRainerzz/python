@@ -1,7 +1,7 @@
 students=["Hermoine","Harry","Ron"]
 
 for i, student in enumerate(students):
-    print(i,+1, students)
+    print(i,+1, student)
 
     """
     so with enumerate you won't need an index into the list with bracket i notation,
