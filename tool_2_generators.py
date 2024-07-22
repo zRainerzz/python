@@ -1,7 +1,7 @@
 def main():
     n=int(input("What's n? how many sheep you want to generate?"))
-    for i in range(n):
-        print(sheep(i))
+    for s in sheep(n):
+        print(s)
 
 def sheep(n):
     flock=[]
