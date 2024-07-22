@@ -4,8 +4,7 @@ def main():
         print(sheep(i))
 
 def sheep(n):
-    return "🐑" * n
-
+    flock=[]
 
 if __name__ == "__main__":
     main()
