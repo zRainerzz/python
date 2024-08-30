@@ -8,4 +8,7 @@ for arg in sys.argv[1:]:#which leans start at location 1 not zero and take a sli
     
 images[0].save(
     "costume.gif", save_all=True,append_images=[images[1]], duration=200,loop=0#it means loop*0 times which will be refered to forever
+    #the name of file i wanna create
+    #save all the frames
+    #duration= 200ms
 )
